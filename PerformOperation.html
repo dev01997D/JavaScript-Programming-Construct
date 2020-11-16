@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+    'use script';
+
+    let numberOne = parseInt(prompt("Enter first number"));
+    let numberTwo = parseInt(prompt("Enter second number"));
+    let numberThree = parseInt(prompt("Enter third number"));
+    performCalculation(numberOne, numberTwo, numberThree);
+
+    function performCalculation(numberOne, numberTwo, numberThree) {
+        let operation1 = numberOne + numberTwo * numberThree;
+        let operation2 = numberThree + numberOne / numberTwo;
+        let operation3 = numberOne % numberTwo + numberThree;
+        let operation4 = numberOne * numberTwo + numberThree;
+        alert("numOne + numTwo * numThree :  " + operation1);
+        alert("numThree + numOne / numTwo :  " + operation2);
+        alert("numOne % numTwo + numThree :  " + operation3);
+        alert("numOne * numTwo + numThree :  " + operation4);
+        alert("Maximum is : " + Math.max(operation1, operation2, operation3, operation4));
+        alert("Minimum is : " + Math.min(operation1, operation2, operation3, operation4))
+    }
+</script>

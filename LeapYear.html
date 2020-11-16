@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script>
+    'use script';
+
+    function findleapYear(year){
+        if (year%400==0) {
+            alert("Leap year");
+        } 
+        else if(year%100!=0 && year%4==0){
+            alert("Leap year");
+        }
+        else {
+            alert("Not a leap year");
+        }
+    }
+    let year=prompt("Enter the year name: ");
+    findleapYear(year);
+</script>

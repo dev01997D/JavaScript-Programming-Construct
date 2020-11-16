@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<script>
+    'use script';
+
+    var Feet, Inch, meter;
+    let number = parseInt(prompt("Enter choice for lenght conversion \n1. Feet to Inch \n2. feet to meter \n3. Inch to feet \n4. Meter to feet"));
+    switch (number) {
+        case 1:
+           Feet = parseFloat(prompt("Enter length in feet : "));
+            Inch = Feet * 12;
+            alert("Length in inches is : " + Inch);
+            break;
+        case 1:
+            Feet = parseFloat(prompt("Enter length in feet : "));
+            meter = Feet * 0.3048;
+            alert("Lenght in meter is : " + meter);
+            break;
+        case 3:
+            Inch = parseFloat(prompt("Enter length in inches : "));
+            Feet = inch / 12;;
+            alert("Lenght in feet is : " + feet);
+            break;
+        case 4:
+            meter = parseFloat(prompt("Enter length in meter : "));
+            Feet = meter * 3.28084;
+            alert("Lenght in feet is : " + feet);
+            break;
+        default:
+            alert("Please enter correct number");
+    }
+</script>
